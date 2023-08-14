@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sending POST request with Fetch API</title>
+</head>
+
+<body>
+    <script>
+        const createtodo = async (todo) => {
+            let options = {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json"
+                },
+                body: JSON.stringify(todo)
+
+            };
+            let p = await fetch('https://jsonplaceholder.typicode.com/posts', options)
+            let response = await p.json();
+            return response;
+        };
+        const gettodo = async (id) => {
+            let response= await fetch('https://jsonplaceholder.typicode.com/posts/1' + id)
+            let  r = await response.json();
+            return r;
+        }
+        const mainFunc = async () => {
+            let todoR = {
+                title: 'Steven',
+                body: 'Varma',
+                userId: 1,
+
+            }
+            let todo = await createtodo(todoR);
+            console.log(todo);
+            console.log(gettodo(1));
+        };
+        mainFunc();
+    </script>
+</body>
+
+</html>

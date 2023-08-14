@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async/Await in JavaScript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <script>
+            async function steven(){
+                let DelhiWeather = new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                            resolve("27-Deg");
+                        },2000)
+                })
+                let UPWeather = new Promise((resolve,reject)=>{
+                        setTimeout(()=>{
+                            resolve("22-Deg");
+                        },5000)
+                })
+                // DelhiWeather.then((alert));
+                // UPWeather.then((alert));
+                console.log("FActhing DElhi Weather");
+                let DelhiW = await DelhiWeather;
+                console.log("FActhed DElhi Weather");
+                console.log("FActhing UP Weather");
+                let UPW = await UPWeather;
+                console.log("FActhed UP Weather");
+                return [DelhiW, UPW];
+            }
+            const Harry=async()=>{
+                console.log("Hey i am Harry and i am waiting");
+            }
+            const chain=async()=>{
+
+            console.log("Welcome to Weather ");
+            let a = await steven();
+            let b = await Harry() 
+            // a.then((value)=>{
+            //     console.log(value);
+            // })
+        }
+        chain();
+            // console.log(a);
+            // steven().then((x)=>{
+            //     alert(x)
+            // })
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOPS</title>
+</head>
+<body>
+        <script>
+             class Complex{
+                constructor(num1, num2){
+                    this.num1 = num1;
+                    this.num2 = num2;
+                    // console.log("Your Complex Number is: " + num1 + " + " +  num2 + "i")
+                }
+                 add(num){
+                    
+                     this.num1= this.num1 + num.num1;
+                     this.num2= this.num2 + num.num2;
+                    console.log("Result is: " + this.num1 + " + " + this.num2 + "i");
+                }
+                get num1(){
+                    return this._num1;
+                }
+                set num1(newNum1){
+                    this._num1 = newNum1;
+                }
+                get num2(){
+                    return this._num2;
+                }
+                set num2(newNum2){
+                    this._num2 = newNum2;
+                }
+                
+             };
+             let a = new Complex(2,4);
+             a.num1 = 3;
+             a.num2 = 5;
+             let b = new Complex(2,4);
+             b.num1 = 3;
+             b.num2 = 5;
+            a.add(b);
+
+            // class Human{
+            //     constructor(name, food){
+            //         this.name = name;
+            //         this.food=food;
+            //     }
+            //     walk(){
+            //         console.log(this.name + " Human is Walking");
+            //     }
+            // }
+            // class Student extends Human{
+            //     walk(){
+            //         console.log(this.name +  " Student is Walking");
+            //     }
+
+            // }
+            // let  o = new Student("Steven","Chole");
+            // o.walk();
+
+            // console.log(o instanceof Student);
+        </script>
+</body>
+</html>

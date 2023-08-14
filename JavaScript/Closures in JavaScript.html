@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures in JavaScript</title>
+</head>
+<body>
+    <script>
+
+            message = "GM-global"
+            function hello1(){
+                message = "GM"   
+                console.log("hello1 " + message);
+                // console.log( message);
+                let c= function hello2(){
+                    console.log("i am c " + message);
+                }
+                message = 'Steven'
+                return c;
+            }
+            function returnFunc(){
+
+            const x  = ()=>{
+                let a = 1;
+                console.log(a);
+                const y = ()=>{
+                    // let a = 2;
+                    console.log(a);
+                    const z = ()=>{
+                        // let a = 3;
+                        console.log(a);
+                    }
+                 z();
+                }
+                a=99;
+                y();
+            }
+            return x;
+        }
+            let a = returnFunc();
+            a()
+            // c = hello1();
+            // c()
+    </script>
+</body>
+</html>

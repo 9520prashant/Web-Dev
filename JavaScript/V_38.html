@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: #a1a1a1;
+
+        }
+
+        ul {
+            display: flex;
+            padding: 23px;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <table>
+        <td>Hello</td>
+        <tr>Hello1</tr>
+        <tr>Hello2</tr>
+        <tr>Hello3</tr>
+        <tr>Hello4</tr>
+    </table>
+    <script>
+        document.getElementsByTagName('nav')[0].firstElementChild.style.color = "red";
+        document.getElementsByTagName('nav')[0].firstElementChild.style.color = "red";
+        document.getElementsByTagName('nav')[0].lastElementChild.style.color = "green";
+        Array.from(document.getElementsByTagName('li')).forEach(element => {
+            element.style.background = "wheat";
+        });
+    </script>
+</body>
+
+</html>

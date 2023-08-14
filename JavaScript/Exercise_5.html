@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise-5</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fragment+Mono:ital@1&family=Luckiest+Guy&family=Oswald&family=Patrick+Hand&family=Philosopher:ital,wght@0,700;1,700&family=Sorts+Mill+Goudy&family=Source+Code+Pro:wght@300&family=Syne+Mono&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Fragment+Mono:ital@1&family=Luckiest+Guy&family=Oswald&family=Patrick+Hand&family=Philosopher:ital,wght@0,700;1,700&family=Sorts+Mill+Goudy&family=Source+Code+Pro:wght@300&family=Syne+Mono&family=Titan+One&display=swap');
+
+        body {
+            background: black;
+            color: green;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Fragment Mono', monospace;
+            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Patrick Hand', cursive;
+            font-family: 'Philosopher', sans-serif;
+            font-family: 'Sorts Mill Goudy', serif;
+            font-family: 'Source Code Pro', monospace;
+            font-family: 'Syne Mono', monospace;
+            font-family: 'Titan One', cursive;
+            ;
+            font-size: 25px;
+            background-image: url('./Hacker.jpg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="text"></div>
+    <script>
+        let a = [
+            "Initilizing Hack tool...",
+            "Connecting to Instagram...",
+            "Connecting to Server...",
+            "Connecting to Server 2...",
+            "Connected Successfullly...",
+            "Username fached...",
+            "Trying Brute Force...",
+            "200k Password tried...",
+            "Match Found...",
+            "Accessing account...",
+            "Hack Successful..."
+        ];
+        const sleep = async (second) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(true);
+                }, second * 1000);
+            })
+        }
+        const showHac = async (arr) => {
+            await sleep(2);
+            // console.log(arr);
+            // document.write(arr);
+            text.innerHTML = text.innerHTML + arr + '<br>';
+        };
+        (async () => {
+            for (let i = 0; i < a.length; i++) {
+                await showHac(a[i]);
+            }
+        })()
+    </script>
+</body>
+
+</html>

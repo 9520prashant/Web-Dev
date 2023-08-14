@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Other</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header ::before{
+            content: "";
+            background: url('PV.png');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: .2;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            margin: 3px 190px;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1{
+            
+          font-size: 3rem;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        /* section ::before{
+            content: "this is content";
+        } */
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+     <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+     </header>
+     <section>
+        <h1>Welcome to CodeSchool</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus distinctio ducimus ratione, totam rem in exercitationem, quibusdam voluptate accusamus veritatis fuga nemo cupiditate? Quo aliquam corrupti deserunt optio ad mollitia voluptate molestias voluptatibus necessitatibus.</p>
+     </section>
+     <hr>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+
+    </style>
+</head>
+<body>
+        <script>
+                //  const sayHello= ()=>{
+                //     console.log("HEllo");
+                //  }; 
+                //  const sayHello = (name) => console.log('Hello ' + name);    
+                 const sayHello = name => console.log('Hello ' + name);  
+                //  sayHello("Steven");
+                 const x ={
+                    name:"Steven",
+                    role:"Js developer",
+                    exp:"6",
+                    show:function(){
+                        // console.log(`The name is ${this.name}\n The Role is ${this.role}\n The Experience is ${this.exp}`);
+                        let that = this;
+                        // setTimeout(function (){
+                        //     // console.log(this);
+                        //     console.log(`The name is ${that.name}\n The Role is ${that.role}\n The Experience is ${that.exp}`);
+
+                        // },2000);
+                        setTimeout(()=>{
+                            // console.log(this);
+                            console.log(`The name is ${this.name}\nThe Role is ${this.role}\nThe Experience is ${this.exp}`);
+
+                        },2000);
+                    }
+                 }  
+                 x.show();
+        </script>
+</body>
+</html>

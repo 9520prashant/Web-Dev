@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <style>
+            body{
+                background-color: rgb(128, 128, 244);
+                background-image: url('./BG.png');
+                background-repeat: no-repeat;
+                background-size:100%;
+            }
+            .text{
+                color: rgb(0, 223, 227);
+                position: absolute;
+                top: 9rem;
+                left: 17rem;
+                font-size: 2rem;
+                border: 4px solid whitesmoke;
+                border-radius: 12px;
+                padding: 15px;
+            }
+    </style>
+</head>
+<body>
+        <div id="time" class="text" >
+          </div>
+    <script>    
+            setInterval(()=>{
+                let d = new Date();
+                time.innerHTML = d;
+            },1000);
+    </script>
+
+  
+</body>
+</html>

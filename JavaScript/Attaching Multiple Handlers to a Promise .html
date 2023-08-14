@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attaching Multiple Handlers to a Promise </title>
+    <style>
+
+    </style>
+</head>
+<body>
+        <script>
+                let p1 = new Promise((resolve, reject) =>{
+                    setTimeout(()=>{
+                        // alert("Hey I am not resolved");
+                        resolve(1);
+                    },2000)
+                })
+                p1.then(()=>{
+                    console.log("Hurray");
+                    return new Promise((resolve, reject)=>{
+                        setTimeout(()=>{
+                            resolve(4);
+                        },6000)
+                    })
+                }).then((value)=>{
+                    console.log(value);
+                })
+                p1.then((value)=>{
+                    console.log("congrats this promise resolved");
+                })
+        </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELement</title>
+    <style>
+            html,body{
+                height:100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            ul{
+                display: flex;
+                background: #6f6868;
+                margin: 0;
+                padding: 15px 0;
+            }
+            ul li{
+                list-style: none;
+                color:white;
+                margin: 0 12px;
+            }
+    </style>
+</head>
+<body><!-- I am Steven -->
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Hire Me</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p>I am Steven</p>
+    </div>
+    <script>
+        const changeColor = ()=>{
+            document.body.firstElementChild.style.background = "red";
+        }
+        let b = document.body;
+        console.log("First Child of b is", b.firstChild);
+        console.log("First Element Child of b is", b.firstElementChild);
+    </script>
+</body>
+</html>

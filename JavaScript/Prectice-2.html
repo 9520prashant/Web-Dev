@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prectice-2</title>
+    <style>
+            .bulb{
+                background: yellow;
+            }
+            .bulb-container{
+                height: 341px;
+                width: 341px;
+            }
+    </style>
+</head>
+<body>
+        <!-- <button onclick="alert('HEllo')">click me</button>
+        <button onclick="alert('Hey')">click me</button>
+        <button onclick="alert('Hi')">click me</button>
+        <h1>Bookmarks</h1>
+        <button id="google">Google</button>
+        <button id="facebook">facebook</button>
+        <button id="instagram">instagram</button> -->
+
+
+        <div id="bulb" class="bulb bulb-container"></div>
+        <script>
+                // document.getElementById("google").addEventListener("click", function(){
+                //     window.location = "https://google.com";
+                //     win.focus();
+                // });
+                // document.getElementById("facebook").addEventListener("click", function(){
+                //     window.location = "https://facebook.com"
+                //     win.focus();
+                // });
+                // document.getElementById("instagram").addEventListener("click", function(){
+                //     window.location = "https://instagram.com";
+                //     win.focus();
+                // });
+
+
+                setInterval(async function() {
+                    document.querySelector('#bulb').classList.toggle('bulb')
+                }, 1000);
+        </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!-- display Flex Karke hm Ek FlexBox ko Banate hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex-properties for flex container */
+            /* 1.flex direction */
+
+            /* flex-direction by Default row hoti hai  */
+
+            /* flex-direction: row; */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap; */
+
+            /* flex-flow: row-reverse wrap; shortCUt flex-direction and flex-wrap dono ko ek sath likhne ke liye  */
+
+            /* CENTER THE CONTENT IN HORIZONTAL DIRECTION */
+            /* justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around; */   
+
+            /* CENTER THE CONTENT IN VERTICAL DIRECTION */
+            /* align-items: center;
+            align-items: flex-end;
+            align-items: stretch; */
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        /* #item1{
+            /* order: 2; JISKA ORDER BADA HOGA WO BAAD ME SHOW HOGA  */
+            /* flex-grow: 2; */
+            
+        /* }    */
+        /*#item2{
+            /* flex-grow: 3;
+            flex-shrink: 3; */
+
+            /* when direction is set to row flex basis  is control width , when is set to column flex basis control height */
+
+            /* flex-basis: 260px; */
+
+      /*  }
+        #item3{
+            /* flex: 2 2 150px; */
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+      /*  } */
+    </style>
+</head>
+<body>
+    <h1>This is FlexBox</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fouth Box</div>
+        <div class="item" id="item4">Fifth Box</div>
+        <div class="item" id="item4">Six Box</div> -->
+    </div>
+</body>
+</html>

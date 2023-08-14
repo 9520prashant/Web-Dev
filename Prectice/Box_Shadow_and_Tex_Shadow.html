@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: blueviolet;
+            box-shadow: -10px -13px green;
+            /* Box Shadow : offSet-X offSet-Y Colour  */
+            
+            /* Box Shadow : offSet-X offSet-Y  Blur Redius Colour  */
+            /* box-shadow: 7px 5px 10px green;
+            box-shadow: -7px -5px 10px green; */
+            
+            /* Box Shadow : offSet-X offSet-Y  Blur Redius Spred Redius Colour  */
+            /* box-shadow: -10px -13px 10px 34px green; */
+
+            box-shadow: inset 3px 12px gray, 4px 12px red;
+            
+
+            /* border: 2px solid red; */
+        }
+        .card h2{
+            text-shadow: 2px 3px rgb(216, 138, 138);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="card" id="card1">
+                <h2>This is C++ Course</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid ea dignissimos quod suscipit tenetur, laborum ut provident? Tempora enim expedita atque illum cupiditate explicabo, suscipit quo, rem rerum quibusdam dolore earum in ipsam?</p>
+            </div>
+            <div class="card" id="card2">
+                <h2>This is HTML Course</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid ea dignissimos quod suscipit tenetur, laborum ut provident? Tempora enim expedita atque illum cupiditate explicabo, suscipit quo, rem rerum quibusdam dolore earum in ipsam?</p>
+            </div>
+            <div class="card" id="card3">
+                <h2>Card -3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime aliquid ea dignissimos quod suscipit tenetur, laborum ut provident? Tempora enim expedita atque illum cupiditate explicabo, suscipit quo, rem rerum quibusdam dolore earum in ipsam?</p>
+            </div>
+        </div>
+</body>
+</html>

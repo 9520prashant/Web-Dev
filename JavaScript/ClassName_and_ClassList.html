@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassName and ClassList</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .yellow {
+            background: yellow;
+            color: white;
+        }
+
+        .red {
+            background: red;
+            color: white;
+        }
+
+        .text-dark {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first" class="yellow text-dark">
+        <span>Hy I am Steven</span>
+    </div>
+    <script>
+        let first = document.getElementById('first');
+        first.className = "text-dark red ";
+        first.classList.toggle('red');
+        first.classList.remove('yellow');
+        first.classList.toggle('yellow');
+        first.classList.toggle('red');
+        first.classList.toggle('yellow');
+        first.classList.contains('red');
+    </script>
+</body>
+
+</html>

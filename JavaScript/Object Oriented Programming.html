@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented Programming</title>
+</head>
+<body>
+    <script>
+            // ProtoTypes
+            // let a  = {
+            //     name2: "Steven",
+            //     language: "javaScript",
+            //     run:()=>{
+            //         alert("Self run");
+            //     },
+            // };
+            // console.log(a);
+            // let p= {
+            //     run:()=>{
+            //         alert("run");
+            //     },
+            // };
+            // p.__proto__ = {
+            //     name:"PV",
+            // }
+            // a.__proto__ = p;
+            // a.run();
+            // console.log(a.name);
+
+            // Classes and Objects
+            // class Human{
+            //     sleep(){
+            //         alert("sleeping")
+            //     }
+            //     // constructor(){
+            //     //     console.log("My Constructor Callled");
+            //     // }
+            //     constructor(data){
+            //         this.data = data;
+            //     }
+            // };
+            // let steven = new Human(12);
+            // // steven.sleep();
+            // console.log(steven.data);
+
+            // Inheritance & extends Keyword in JavaScript 
+            // class Animal{
+            //     constructor(name, color){
+            //         this.name = name;
+            //         this.color = color;
+            //     }
+            //     run(){
+            //         console.log(this.name +" is running");
+            //     }
+            //     shout(){
+            //         console.log(this.name +" is shouring");
+            //     }
+
+            // }
+            // class Monkey extends Animal{
+            //     EatBanana(){
+            //         console.log(`${this.name} +  is Eating Bananas`);
+            //     }
+            // }
+            // let bandar = new Monkey("chimpu", "Black");
+            // bandar.run();
+            // bandar.shout();
+            // bandar.EatBanana();
+
+            // Method Overriding
+            // class Employee{
+            //     constructor(name){
+            //         console.log("Employee Constructor Called");
+            //         this.name = name;
+            //     }
+            //     login(){
+            //         console.log("Employee has log in");
+            //     }
+            //     logout(){
+            //         console.log("Employee has log out");
+            //     }
+            //     requestLeave(leave){
+            //         console.log("Employee has requested " + leave +" leaves Auto");
+            //     }
+            // }
+            // class Programmer extends Employee{
+            //     constructor(name){
+            //         super(name);
+            //         console.log("Programmer constructor Called" + " and name is " + name);
+            //     }
+            //     requestCoffie(x){
+            //         console.log(`Employee has requested ${x} Coffies`);
+            //     }
+            //     requestLeave(leave){
+            //         leave = leave+1;
+            //         console.log("Employee has requested " + leave +" one Extra leaves");
+            //     }
+            //     requestLeave(leave){
+            //         // console.log("Employee has requested " + leave +" leaves");
+            //         super.requestLeave(4);
+            //         console.log("One Extra is Granted");
+            //     }
+            // }
+            // let e = new Programmer("Steven");
+            // console.log(e.name);
+            // e.login()
+            // e.requestLeave(2)
+            // e.requestCoffie(5)
+
+            // Static Methods in JS
+            // class Animal{
+            //     constructor(name){
+            //         this.name = Animal.Capitalise(name);
+            //     }
+            //     walk(){
+            //         alert(this.name + " is Walking");
+            //     }
+            //     static Capitalise(name){
+            //         return name.charAt(0).toUpperCase() + name.substr(1, name.length);
+            //     }
+            // };
+            // let j = new Animal("dog");
+            // j.walk();
+
+            // getter and Setter
+            // class Animal{
+            //     constructor(name){
+            //         this.name =  name;
+            //     }
+            //     fly(){
+            //         console.log( this._name + " Flying");
+            //     }
+            //     get name(){
+            //         return this._name;
+            //     }
+            //     set name(newname){
+            //         this._name = newname;
+            //     }
+            // }
+            // class Dog extends Animal{
+
+            // }
+            // let a = new Animal("Steven");
+            // console.log(a.name);
+            // a.name = "Prashant";
+            // a.fly();
+            // let c = 58;
+            // let d = new Dog();
+            // console.log("For Animal Class Object");
+            // console.log(a instanceof Animal);
+            // console.log("For Normal Variable");
+            // console.log(c instanceof Animal);
+            // console.log("For Iherited Class Object from Animal");
+            // console.log(d instanceof Animal);
+            
+    </script>
+</body>
+</html>

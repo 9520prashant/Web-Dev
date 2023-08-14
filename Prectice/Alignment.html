@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Oswald&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Source Code Pro', monospace;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid rgb(56, 57, 45);
+            margin: 33px auto;
+            background-color: rgb(196, 231, 127);
+        }
+        .item{
+            border: 3px solid rgb(54, 79, 54);
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(227, 197, 197);
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #st{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+     p,h3{
+        /* text-align: left;
+        text-align: right;
+        text-align: center; */
+        text-align: justify;
+     }
+     h1{
+        margin: auto;
+        width: 254px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat adipisci itaque tempore, labore assumenda accusamus impedit tempora velit sunt error dignissimos odit minus illum suscipit quo nisi. Molestias, a. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit suscipit perferendis id ipsum laboriosam voluptatibus minima hic veritatis numquam minus eos porro laborum sint, eaque quasi delectus nesciunt perspiciatis, quos alias asperiores quidem molestiae!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat adipisci itaque tempore, labore assumenda accusamus impedit tempora velit sunt error dignissimos odit minus illum suscipit quo nisi. Molestias, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo debitis explicabo itaque quae harum cupiditate molestias enim magnam quod vero? Earum explicabo magnam sequi unde eveniet autem tempore, consequuntur ipsam voluptate maxime quas iste.</p>
+        </div>
+        <div id="st" class="item">
+            <h3>Stationary</h3>
+            <p id="stpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat adipisci itaque tempore, labore assumenda accusamus impedit tempora velit sunt error dignissimos odit minus illum suscipit quo nisi. Molestias, a.</p>
+        </div>
+        <div id="glass" class="item">
+            <h3>Glasses</h3>
+            <p id="glasspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat adipisci itaque tempore, labore assumenda accusamus impedit tempora velit sunt error dignissimos odit minus illum suscipit quo nisi. Molestias, a.</p>
+        </div>
+    </div>
+</body>
+</html>

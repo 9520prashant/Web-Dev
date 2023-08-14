@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring assignment and Spread Operator</title>
+</head>
+<body>
+    <script>
+            let arr = [3,5,8,9,12,14];
+            //Destructing
+
+            // let [a,b,c,d,...rest] = arr;
+            // console.log(a,b,c,d,rest);
+            
+            // let [a, , ,...rest] = arr;
+            // console.log(a,rest);
+
+            let {a,  b} = {a:1, b:5}
+            // console.log(a,b);
+
+            // Spread Syntax 
+            let arr1 = [3,5,8];
+            let obj1 = {...arr1};
+            console.log(obj1);
+
+            function sum(v1,v2,v3){
+                return v1+v2+v3;
+            }
+            console.log(sum(...arr1));
+
+
+
+            let obj2 = {
+                name:"Steven",
+                org:"xyz",
+                add:"Sakoti"
+            };
+            console.log({ org:"Google", add:"Meerut",...obj2}); //This will not overright values
+            // console.log({...obj2, org:"Google", Add:"Meerut"});
+
+    </script>
+</body>
+</html>
